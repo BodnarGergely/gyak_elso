@@ -8,5 +8,9 @@ main()
 		printf("Leirom, hogy: %d", i);
 		i++;
 	}
+
+	
 	while(1){}
+
+
 }
