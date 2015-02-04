@@ -2,10 +2,13 @@
 
 main()
 {
+	char str[100];
+
 	int i = 0;
 	while(i < 15)
 	{
-		printf("Leirom, hogy: %d", i);
+		gets( str );
+		printf("Leirom, hogy: %s \n\r", str);
 		i++;
 	}
 	while(1){}
