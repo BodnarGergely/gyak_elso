@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define CHOICE 1
+#define CHOICE 2
 
 #if (CHOICE == 1)
 
@@ -30,6 +30,7 @@ void main()
 	char str[100];
 	int i   = 0;
 	int num = 0;
+	int temp = 0;
 
 	printf("Ez a masodik gyakorlopelda\n\r");
 	printf("Egyszeruen visszairja a kijelzore a beirt stringet integerkent, ha nem szam jött, hanem szoveg, akkor kilép.\n\r");
@@ -39,18 +40,37 @@ void main()
 		gets( str );
 		num = atoi( str );
 
-		if(num == 0)
+		if(num != 0)
 		{
-			printf("Exit.");
+			temp = num;
+			printf("A bejött adat: %d \n\r", num);
+			(num == 1)? (printf("Nincs primtényezos felbontas")) : (printf("A primtenyezos felbontas"));
+			
+			while(temp != 1)
+			{
+				i = 2;
+
+				while()
+				{
+					
+				}
+			}
+			break;
+		}
+
+		else if(strcmp(str, "exit") == 0)
+		{
+			printf("Exit.\n\r");
 			break;
 		}
 
 		else
 		{
-			printf("A bejött adat: %d \n\r", num);
+			printf("Butus!\n\r");
 		}
 	}
-	printf("Press any key!");
+
+	printf("Press any key!\n\r");
 	getchar();
 }
 
